@@ -1,3 +1,4 @@
+import com.cichocki.circle.Circle;
 import com.cichocki.rectangle.Rectangle;
 import com.cichocki.square.Square;
 
@@ -19,7 +20,12 @@ public class Main {
         var R = new Rectangle(width, height);
         System.out.println("Area of your rectangle is: " + R.getArea());
         System.out.println("Perimeter of your rectangle is: " + R.getPerimeter());
-
+        //--------------------------------------------
+        System.out.print("Enter radius of circle: ");
+        double radius = scanner.nextDouble();
+        var C = new Circle(radius);
+        System.out.println("Area of your circle is: " + C.getArea());
+        System.out.println("Perimeter of your circle is: " + C.getPerimeter());
 
     }
 }

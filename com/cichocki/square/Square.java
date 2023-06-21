@@ -5,8 +5,20 @@ public class Square {
      double area;
      double perimeter;
 
+    public void setSide(double side) {
+        this.side = side;
+    }
+
+    public void setArea(double area) {
+        this.area = area;
+    }
+
+    public void setPerimeter(double perimeter) {
+        this.perimeter = perimeter;
+    }
+
     public Square(double x){
-        side = x;
+        setSide(x);
         calculateArea();
         calculatePerimeter();
     }
@@ -22,10 +34,10 @@ public class Square {
         return area;
     }
     public void calculateArea(){
-        area = getSide() * getSide();
+        setArea(getSide() * getSide());
     }
     public void calculatePerimeter(){
-        perimeter = 4 * getSide();
+        setPerimeter(4 * getSide());
     }
 
 
