@@ -44,10 +44,12 @@ public class Rectangle {
     public  double getArea() {
         return area;
     }
-    public void calculateArea(){
+    public double calculateArea(){
         setArea(getHeight() * getWidth());
+        return area;
     }
-    public void calculatePerimeter(){
+    public double calculatePerimeter(){
         setPerimeter(2 * getWidth() + 2 * getHeight());
+        return perimeter;
     }
 }

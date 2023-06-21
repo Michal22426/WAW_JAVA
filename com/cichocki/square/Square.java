@@ -33,11 +33,13 @@ public class Square {
     public  double getArea() {
         return area;
     }
-    public void calculateArea(){
+    public double calculateArea(){
         setArea(getSide() * getSide());
+        return area;
     }
-    public void calculatePerimeter(){
+    public double calculatePerimeter(){
         setPerimeter(4 * getSide());
+        return perimeter;
     }
 
 

@@ -34,11 +34,13 @@ public class Circle {
         calculateArea();
         calculatePerimeter();
     }
-    public void calculateArea(){
+    public double calculateArea(){
         setArea(Math.PI * getRadius() * getRadius());
+        return area;
     }
-    public void calculatePerimeter(){
+    public double calculatePerimeter(){
         setPerimeter(2 * Math.PI * getRadius());
+        return perimeter;
     }
 
 
