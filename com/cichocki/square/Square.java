@@ -1,17 +1,17 @@
 package com.cichocki.square;
 
 public class Square {
-     double width;
+     double side;
      double area;
      double perimeter;
 
-    public Square(double x){ //constructor
-        width = x;
+    public Square(double x){
+        side = x;
         calculateArea();
         calculatePerimeter();
     }
-    public  double getWidth() {
-        return width;
+    public  double getSide() {
+        return side;
     }
 
     public double getPerimeter() {
@@ -22,10 +22,10 @@ public class Square {
         return area;
     }
     public void calculateArea(){
-        area = getWidth() * getWidth();
+        area = getSide() * getSide();
     }
     public void calculatePerimeter(){
-        perimeter = 4 * getWidth();
+        perimeter = 4 * getSide();
     }
 
 
