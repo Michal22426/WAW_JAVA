@@ -4,6 +4,9 @@ import com.cichocki.square.Square;
 
 import java.util.Scanner;
 
+/**
+ * Main class that shows how my programme works
+ */
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

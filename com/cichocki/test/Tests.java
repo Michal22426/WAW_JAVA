@@ -6,6 +6,10 @@ import com.cichocki.square.Square;
 import org.junit.Assert;
 import org.junit.Test;
 
+/**
+ * This is a class that tests methods of classes Rectangle, Circle and Square
+ * @author Michał Cichocki
+ */
 public class Tests {
     @Test
     public void squareAreaCalculatingTest(){
