@@ -7,10 +7,26 @@ public class Rectangle {
     double perimeter;
 
     public Rectangle(double x, double y){
-        width = x;
-        height = y;
+        setWidth(x);
+        setHeight(y);
         calculateArea();
         calculatePerimeter();
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public void setArea(double area) {
+        this.area = area;
+    }
+
+    public void setPerimeter(double perimeter) {
+        this.perimeter = perimeter;
     }
 
     public double getWidth() {
@@ -29,9 +45,9 @@ public class Rectangle {
         return area;
     }
     public void calculateArea(){
-        area = getHeight() * getWidth();
+        setArea(getHeight() * getWidth());
     }
     public void calculatePerimeter(){
-        perimeter = 2 * getWidth() + 2 * getHeight();
+        setPerimeter(2 * getWidth() + 2 * getHeight());
     }
 }
